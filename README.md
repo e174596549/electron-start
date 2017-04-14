@@ -12,7 +12,7 @@
     "scripts": {
         "start": "electron .",// 「start」 测试启动方式 不要修改
         "package": "electron-packager ./ Minesweeper --all --out ~/Desktop/Minesweeper --version 1.6.2 --overwrite --icon=./20170309040842376_easyicon_net_128.icns"
-    },// 「package」中的 Minesweeper 修改为你的项目名称 「--all」是你要大包的平台 如果是 all 会打包为全平台 如果改为 「--Mac」则只打包为 mac 应用  --platform=win32 --arch=x64 打包win应用「~/Desktop/Minesweeper」是大包后文件的生成地址 默认是桌面 可自行修改「--icon=」后面的部分是你打包应用的图标地址 自行替换
+    },// 「package」中的 Minesweeper 修改为你的项目名称 「--all」是你要大包的平台 如果是 all 会打包为全平台 如果改为 「--Mac」则只打包为 mac 应用  --platform=win32 --arch=x64 打包win应用「~/Desktop/Minesweeper」是打包后文件的生成地址 默认是桌面 可自行修改 「C:\\Desktop\\Minesweeper」为 Windows 系统下的路径写法「--icon=」后面的部分是你打包应用的图标地址 自行替换
     "devDependencies": {
         "electron": "^1.6.2",
         "electron-packager": "^8.5.2",
@@ -34,6 +34,6 @@
 ## 在命令行工具中找的你的项目入口目录 执行相应命令
 - 运行 npm install electron -g 安装electron
 - 运行 npm install --save-dev electron-prebuilt 安装built工具
-- 运行 npm install 安装依赖包
+- 运行 npm install --save-dev electron-packager 安装打包工具
 - 运行 npm start 进行调试
 - 调试无问题后 执行 npm run-script package 进行打包 文件默认将生成在桌面
