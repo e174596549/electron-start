@@ -32,7 +32,7 @@
     mainWindow.webContents.openDevTools()
 ```
 ## 在命令行工具中找的你的项目入口目录 执行相应命令
-- 运行 npm install electron -g 安装electron
+- 第一次需要运行 npm install electron -g 全局安装 electron
 - 运行 npm install --save-dev electron-prebuilt 安装built工具
 - 运行 npm install --save-dev electron-packager 安装打包工具
 - 运行 npm start 进行调试
