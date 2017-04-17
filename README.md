@@ -1,5 +1,5 @@
 # Electron 使用方法
-111111111111111111
+
 - 将你自己项目的入口 HTML 文件名称修改为 index.html
 - 将本文件夹内的 main.js 与 package.json 两个文件复制到你项目的入口目录（与 index.html 在一个目录内）
 - 打开 package.json 文件按照下面的介绍进行修改 未提及部分不要修改
@@ -11,7 +11,7 @@
     "main": "./main.js",// 「main」 入口地址 不要修改
     "scripts": {
         "start": "electron .",// 「start」 测试启动方式 不要修改
-        "package": "electron-packager ./ Minesweeper --all --out ~/Desktop/Minesweeper --version 1.6.2 --overwrite --icon=./20170309040842376_easyicon_net_128.icns"
+        "package": "electron-packager ./ Minesweeper --all --out ~/Desktop/Minesweeper --overwrite --icon=./20170309040842376_easyicon_net_128.icns"
     },// 「package」中的 Minesweeper 修改为你的项目名称 「--all」是你要大包的平台 如果是 all 会打包为全平台 如果改为 「--Mac」则只打包为 mac 应用  --platform=win32 --arch=x64 打包win应用「~/Desktop/Minesweeper」是打包后文件的生成地址 默认是桌面 可自行修改 「C:\\Desktop\\Minesweeper」为 Windows 系统下的路径写法「--icon=」后面的部分是你打包应用的图标地址 自行替换
     "devDependencies": {
         "electron": "^1.6.2",
